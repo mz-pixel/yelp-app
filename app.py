@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+import my_yelp
 
 app = Flask(__name__)
 
@@ -6,6 +7,14 @@ app = Flask(__name__)
 def index():
     # we need to return a page
     return render_template("index.html")
+
+@app.route("/submit")
+def submit():
+    user_submitted_term = request.values.get("term")
+    user_submitted_location = request.values.get("location")
+    
+    results = my_yelp.search_businesses(user_submitted_term, user_submitted_location)
+    return results
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
