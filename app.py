@@ -14,7 +14,7 @@ def submit():
     user_submitted_location = request.values.get("location")
     
     results = my_yelp.search_businesses(user_submitted_term, user_submitted_location)
-    return results
+    return render_template("display_results.html", establishments=results, term=user_submitted_term, location=user_submitted_location)
 
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 

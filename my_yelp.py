@@ -1,4 +1,4 @@
-import requests
+import requests, json
 
 def search_businesses(search_term, search_location):
     
@@ -20,7 +20,12 @@ def search_businesses(search_term, search_location):
     
     businesses_dict = businesses_object.text
     
-    return businesses_dict
+    businesses_json = json.loads(businesses_dict)
+    
+    businesses_list = businesses_json("businesses")
+    
+    return businesses_list
 
-# invoke_yelp = search_businesses("restaurants", "chicago")
-# print(invoke_yelp)
+
+invoke_yelp = search_businesses("restaurants", "chicago")
+print(invoke_yelp)

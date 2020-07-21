@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            this is display results page
+        </title>
+    </head>
+<body>
+    here are the top 3 businesses
+    
+    
+    {% for each_business in establsihments %}
+        {{ each_business }}
+    {% endfor %}
+    
+    
+    here is the term:
+    {% for each_term in term %}
+        {{ each_term }}
+    {% endfor %}
+    
+    here is location:
+    {% for each_location in location %}
+        {{ each_location }}
+    {% endfor %}
+    
+    
+    
+    
+</body>
+</html>
