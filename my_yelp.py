@@ -18,11 +18,11 @@ def search_businesses(search_term, search_location):
     
     businesses_object = requests.get(url, params=my_params, headers=my_headers)
     
-    businesses_dict = businesses_object.text
+    businesses_str = businesses_object.text
     
-    businesses_json = json.loads(businesses_dict)
+    businesses_json = json.loads(businesses_str)
     
-    businesses_list = businesses_json("businesses")
+    businesses_list = businesses_json["businesses"]
     
     return businesses_list
 

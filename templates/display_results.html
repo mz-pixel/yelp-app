@@ -6,11 +6,15 @@
         </title>
     </head>
 <body>
-    here are the top 3 businesses
+    here are the top 3 businesses that got returned by yelp
     
     
     {% for each_business in establsihments %}
-        {{ each_business }}
+      <h5><li> 
+       {{ each_business.name }}
+       {{ each_business.rating }}
+       {{ each_business.display_phone }}
+      </li></h5>
     {% endfor %}
     
     
