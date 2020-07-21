@@ -27,5 +27,5 @@ def search_businesses(search_term, search_location):
     return businesses_list
 
 
-invoke_yelp = search_businesses("restaurants", "chicago")
-print(invoke_yelp)
+# invoke_yelp = search_businesses("restaurants", "chicago")
+# print(invoke_yelp)
