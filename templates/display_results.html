@@ -1,32 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <title>
-            this is display results page
-        </title>
-    </head>
+<head>
+    <title>
+        This is the Display Results Page
+    </title>
+</head>
+
 <body>
-    here are the top 3 businesses that got returned by yelp
+    <h3> Here are the top 3 businesses that got returned by Yelp </h3>
     
-    
-    {% for each_business in establsihments %}
-      <h5><li> 
-       {{ each_business.name }}
-       {{ each_business.rating }}
-       {{ each_business.display_phone }}
+    {% for each_business in establishments %}
+      <h5><li>  
+          {{ each_business.name }}
+          {{ each_business.rating }}
+          {{ each_business.display_phone }} 
       </li></h5>
     {% endfor %}
     
     
-    here is the term:
+    Here is the term:
     {% for each_term in term %}
         {{ each_term }}
     {% endfor %}
     
-    here is location:
+    Here is location:
     {% for each_location in location %}
         {{ each_location }}
-    {% endfor %}
+    {% endfor %}    
     
 </body>
 </html>
