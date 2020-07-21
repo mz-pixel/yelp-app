@@ -13,7 +13,7 @@ def search_businesses(search_term, search_location):
     my_params = {
         "term": search_term,
         "location": search_location,
-        "limit": 10,
+        "limit": 3,
     }
     
     businesses_object = requests.get(url, params=my_params, headers=my_headers)
