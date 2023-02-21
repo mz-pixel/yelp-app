@@ -1,8 +1,8 @@
 # yelp app
  
 link:
-https://yelpclone-my-app.herokuapp.com/
-__ the app might not work as Heroku recently removed their free service, I have however connected my student github to heroku to access their paid features but am still waiting for approval.
+https://yelpclone-my-app.herokuapp.com/ \
+The app might not work as Heroku recently removed their free service, I have however connected my student github to heroku to access their paid features but am still waiting for approval.
 ## Screenshots
 ![yelp screenshot 1](https://user-images.githubusercontent.com/63674082/220448622-1e2a2c2c-d2d6-4740-9dc4-843b7297ef4a.png)
 ![yelp screenshot 2](https://user-images.githubusercontent.com/63674082/220448626-1a541731-bca5-44af-9757-de041c917460.png)
