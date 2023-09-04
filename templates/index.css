@@ -1,0 +1,89 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  height: 100vh;
+  margin: 0;
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/005/283/043/original/meeting-room-concept-in-flat-cartoon-design-employees-discuss-work-tasks-while-sitting-at-table-analyze-data-on-large-board-business-communication-illustration-with-people-scene-background-vector.jpg"); */
+  background-image: url("https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs2/123740332/original/231eef2b173247726280eb70820cfffc742f2eae/create-anime-background-style.jpg");
+  /* background-image: url("https://wallpapers.com/images/hd/blue-anime-background-1920-x-1080-j30zia76h6s4xf13.jpg"); */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+  }
+}
+.contain {
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 0;
+  border-radius: 15px;
+  background-color: rgb(222, 222, 222);
+  background-color: #64ccc5;
+  background-color: rgb(209, 255, 255);
+  padding: 20px;
+  height: fit-content;
+
+  @media screen and (max-width: 1650px) {
+    width: 50%;
+    height: fit-content;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    justify-content: flex-start;
+  }
+}
+
+.header {
+  margin-bottom: 80px;
+  color: #000;
+  text-align: center;
+  /* @media screen and (max-width: 720px) {
+    margin-bottom: 20px;
+    font-size: 30pt;
+  } */
+}
+form {
+  background-color: rgb(209, 255, 255);
+  background-color: #64ccc5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px;
+  /* @media screen and (max-width: 720px) {
+    background-color: rgb(0, 255, 255);
+    width: fit-content;
+    height: fit-content;
+  } */
+}
+.input {
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  /* @media screen and (max-width: 720px) {
+    font-size: 20pt;
+    width: 200px;
+  } */
+}
+.button {
+  height: 40px;
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #614bc3;
+}
