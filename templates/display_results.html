@@ -1,29 +1,32 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <title>
         This is the Display Results Page
     </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css"
+        integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/results.css') }}">
 </head>
 
 <body>
-    <div class = "jumbotron">
-        <div class = "container">
-            <h3> Here are the top 25 businesses that got returned by Yelp for 
-            {{ term }} in {{ location }}</h3>
-            <hr><hr>        
-            
+    <div class="jumbotron">
+        <div class="container">
+            <h3> Here are the top 25 businesses that got returned by Yelp for
+                {{ term }} in {{ location }}</h3>
+
             {% for each_business in establishments %}
-                
-                <h4><b>  Name: {{ each_business.name }} </b></h4> <br>
-                <h5>  Rating: {{ each_business.rating }} </h5> <br>
-                <h5>  Phone: {{ each_business.display_phone }} </h5> <br>
-                <h5>  Address: {{ each_business.location.display_address }} </h5> <br>
-                <hr>
+            <div class="result">
+                <h4><b> Name: {{ each_business.name }} </b></h4> <br>
+                <h5> Rating: {{ each_business.rating }} </h5> <br>
+                <h5> Phone: {{ each_business.display_phone }} </h5> <br>
+                <h5> Address: {{ each_business.location.display_address[0] }} </h5> <br>
+            </div>
             {% endfor %}
-              
+
         </div>
     </div>
 </body>
+
 </html>

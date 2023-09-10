@@ -1,0 +1,20 @@
+.jumbotron {
+  background-color: #ffddb7;
+  background-color: #c2faff;
+}
+.result {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #c2faff;
+  background-color: #ffddb7;
+
+  box-shadow: 0 0 10px #ccc;
+}
+h3 {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px #ccc;
+}
