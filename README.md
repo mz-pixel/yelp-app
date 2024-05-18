@@ -1,7 +1,8 @@
 # yelp app
  
 link:
-https://yelpclone-my-app.herokuapp.com/ \
+https://yelpclone-my-app.herokuapp.com/
+
 https://yelp-app-l3jg.onrender.com/
 ## Note
 The app might not work as Heroku recently removed their free service, I have however connected my student github to heroku to access their paid features but am still waiting for approval.
